@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
 
 // Rutas
 import { APP_ROUTES } from './app.routes';
@@ -24,9 +25,11 @@ import { RegisterComponent } from './login/register.component';
   ],
   imports: [
     BrowserModule,
+    CommonModule,
     PagesModule, 
     APP_ROUTES,
     FormsModule,
+    ReactiveFormsModule,
     ServiceModule
   ],
   providers: [],
